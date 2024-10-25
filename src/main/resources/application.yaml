@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: jwt-demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/jwt_demo_db
+    username: admin
+    password: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+
+security:
+  jwt:
+    token:
+      secret-key: yoursecretkey
